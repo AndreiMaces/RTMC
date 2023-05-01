@@ -11,7 +11,8 @@ import { ParticipantsComponent } from './participants/participants.component';
 import { ProgramComponent } from './program/program.component';
 import { PracticalInfoComponent } from './practical-info/practical-info.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
-
+import { SanitizeUrlPipe } from '../pipes/sanitize-url.pipe';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,14 @@ import { AccomodationComponent } from './accomodation/accomodation.component';
     ParticipantsComponent,
     ProgramComponent,
     PracticalInfoComponent,
-    AccomodationComponent
+    AccomodationComponent,
+    SanitizeUrlPipe,
+    GalleryComponent
   ],
   imports: [
     CommonModule,
     ContentRoutingModule
-  ]
+  ],
+  exports: [SanitizeUrlPipe]
 })
 export class ContentModule { }

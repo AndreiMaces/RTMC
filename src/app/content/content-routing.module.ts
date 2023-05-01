@@ -9,6 +9,7 @@ import { ParticipantsComponent } from './participants/participants.component';
 import { ProgramComponent } from './program/program.component';
 import { PracticalInfoComponent } from './practical-info/practical-info.component';
 import { AccomodationComponent } from './accomodation/accomodation.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: "Accomodation",
     component: AccomodationComponent
+  },
+  {
+    path: "gallery",
+    component: GalleryComponent
   }
 ];
 
